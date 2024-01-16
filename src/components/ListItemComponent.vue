@@ -1,10 +1,6 @@
 <template>
   <li class="containerItem">
-    <img
-      src="..\assets\images\capaLivro.webp"
-      alt="frontImage"
-      class="imgList"
-    />
+    <img :src="src" alt="frontImage" class="imgList" />
     <div class="infoContainer">
       <span class="title"> {{ title }} </span>
       <span class="infos"
@@ -18,6 +14,7 @@
 export default {
   name: "ListItemComponent",
   props: {
+    src: String,
     title: String,
     author: String,
     category: String,
@@ -42,13 +39,17 @@ export default {
   height: 4em;
 
   cursor: pointer;
+  user-select: none;
 }
 .containerItem:hover {
   background-color: var(--background-gray-medium-light);
 }
 .imgList {
   background-color: var(--background-gray-light);
+
   height: calc(100% - 1em);
+  aspect-ratio: 3 / 4;
+
   padding-block: 0.5em;
   padding-inline: 0.8em;
 

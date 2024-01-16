@@ -29,7 +29,7 @@ export default { components: { NotificationList } }
   border-radius: 0.5em;
 }
 .listTitle {
-  color: var(--color-white-medium);
+  color: var(--color-gray-light);
 
   padding: 0;
   margin: 0;

@@ -4,11 +4,14 @@
     <ul class="listComponent">
       <slot></slot>
     </ul>
+    <NotificationList />
   </div>
 </template>
 
 <script>
-export default {}
+import NotificationList from "./NotificationList.vue"
+
+export default { components: { NotificationList } }
 </script>
 
 <style>
@@ -18,6 +21,7 @@ export default {}
 }
 .listComponentContainer {
   background-color: var(--background-gray-medium);
+  position: relative;
 
   padding: 1em;
   margin-top: 0.5em;

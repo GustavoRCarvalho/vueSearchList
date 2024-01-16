@@ -15,6 +15,7 @@
   border-radius: 0.5em;
 }
 .inputSearch {
+  font-family: Inter, Helvetica, Arial, sans-serif;
   border: none;
   outline: none;
   padding: 0;
@@ -26,6 +27,8 @@
 .buttonSearch {
   background-color: var(--background-red-dark);
   color: var(--color-red-medium);
+
+  font-family: Inter, Helvetica, Arial, sans-serif;
 
   padding-block: 0.6em;
   padding-inline: 0.8em;

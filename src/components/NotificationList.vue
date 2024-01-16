@@ -1,8 +1,20 @@
 <template>
   <div class="notificationBlur">
-    <button class="notificationButton">3 books just added &&&</button>
+    <button class="notificationButton">
+      3 books just added <NotificationImage />
+    </button>
   </div>
 </template>
+
+<script>
+import NotificationImage from "./NotificationImage.vue"
+
+export default {
+  components: {
+    NotificationImage,
+  },
+}
+</script>
 
 <style>
 .notificationBlur {
@@ -21,6 +33,8 @@
   width: 100%;
 }
 .notificationButton {
+  display: flex;
+  align-items: center;
   background-color: var(--background-white-light);
 
   font-family: Inter, Helvetica, Arial, sans-serif;

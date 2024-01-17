@@ -1,17 +1,28 @@
 <template>
   <div class="notificationBlur">
     <button class="notificationButton">
-      3 books just added <NotificationImage />
+      3 books just added
+      <NotificationImage :imagesList="imagesList" />
     </button>
   </div>
 </template>
 
 <script>
 import NotificationImage from "./NotificationImage.vue"
+import perfil1 from "../assets/images/perfilDisney1.jpg"
+import perfil2 from "../assets/images/perfilDisney2.jpg"
+import perfil3 from "../assets/images/perfilDisney3.jpg"
+
+const imagesList = [perfil1, perfil2, perfil3]
 
 export default {
   components: {
     NotificationImage,
+  },
+  data() {
+    return {
+      imagesList: imagesList,
+    }
   },
 }
 </script>
@@ -40,7 +51,7 @@ export default {
   font-family: Inter, Helvetica, Arial, sans-serif;
   font-weight: bold;
 
-  padding-block: 0.7em;
+  padding-block: 0.4em;
   padding-inline: 1.4em;
 
   border: none;

@@ -5,10 +5,12 @@
       <span class="dropdownSelect">Book -</span>
     </div>
     <div class="verticalLine"></div>
-    <input class="inputSearch" placeholder="Search..." type="text" />
-    <button class="buttonSearch" type="button">Search</button>
+    <input class="inputSearch" :placeholder="$t('searchText')" type="text" />
+    <button class="buttonSearch" type="button">{{ $t("searchButton") }}</button>
   </div>
 </template>
+
+<script></script>
 
 <style>
 .container {

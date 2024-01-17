@@ -1,5 +1,6 @@
 <template>
   <SearchPage />
+  <button v-on:click="setLocale()">change language to pt</button>
 </template>
 
 <script>
@@ -7,9 +8,15 @@ import SearchPage from "./components/SearchPage.vue"
 
 export default {
   name: "App",
+  locale: "pt",
   components: { SearchPage },
   mounted() {
     document.title = "Vue Search App"
+  },
+  methods: {
+    setLocale() {
+      this.$i18n.locale = "pt"
+    },
   },
 }
 </script>

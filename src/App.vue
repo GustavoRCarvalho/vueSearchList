@@ -1,6 +1,12 @@
 <template>
   <SearchPage />
-  <button v-on:click="setLocale">{{ locale }}change language to pt</button>
+  <select v-on:change="setLocale">
+    {{
+      locale
+    }}
+    <option value="en">English</option>
+    <option value="pt">Portuguese</option>
+  </select>
 </template>
 
 <script setup>
@@ -12,9 +18,9 @@ const t = useI18n()
 
 const locale = ref("en")
 
-function setLocale() {
-  console.log("asdasd")
-  t.locale.value = "pt"
+function setLocale(e) {
+  console.log("asdasd", e.target.value)
+  t.locale.value = e.target.value
 }
 document.title = "Vue Search App"
 </script>

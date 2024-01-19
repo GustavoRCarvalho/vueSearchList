@@ -1,5 +1,11 @@
 {
   "message": "hello i18n !!",
   "searchText": "Buscar...",
-  "searchButton": "Buscar"
+  "searchButton": "Buscar",
+  "TypeFile": "Tipo de Arquivo",
+  "Book": "Livro",
+  "Popular": "Popular",
+  "BooksAdded": "livros foram adicionados",
+  "BookAdded": "livro foi adicionado",
+  "Pages": "Páginas"
 }

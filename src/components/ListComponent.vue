@@ -1,6 +1,6 @@
 <template>
   <div class="listComponentContainer">
-    <h4 class="listTitle">Popular</h4>
+    <h4 class="listTitle">{{ $t("Popular") }}</h4>
     <ul class="listComponent">
       <slot></slot>
     </ul>

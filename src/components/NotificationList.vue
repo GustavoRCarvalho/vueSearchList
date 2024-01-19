@@ -1,7 +1,7 @@
 <template>
   <div class="notificationBlur">
     <button class="notificationButton">
-      3 books just added
+      3 {{ $t("BooksAdded") }}
       <NotificationImage :imagesList="imagesList" />
     </button>
   </div>

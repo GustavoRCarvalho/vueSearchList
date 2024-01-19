@@ -1,27 +1,16 @@
 <template>
-  <SearchPage />
-  <select v-on:change="setLocale">
-    {{
-      locale
-    }}
-    <option value="en">English</option>
-    <option value="pt">Portuguese</option>
-  </select>
+  <header>
+    <ChangeLanguage />
+  </header>
+  <main>
+    <SearchPage />
+  </main>
 </template>
 
 <script setup>
-import { ref } from "vue"
+import ChangeLanguage from "./components/ChangeLanguage.vue"
 import SearchPage from "./components/SearchPage.vue"
-import { useI18n } from "vue-i18n"
 
-const t = useI18n()
-
-const locale = ref("en")
-
-function setLocale(e) {
-  console.log("asdasd", e.target.value)
-  t.locale.value = e.target.value
-}
 document.title = "Vue Search App"
 </script>
 
@@ -39,7 +28,6 @@ document.title = "Vue Search App"
   align-items: center;
 
   width: 100%;
-  height: 100%;
 }
 body {
   --background-gray-dark: #131313;
@@ -56,10 +44,29 @@ body {
   align-items: center;
   justify-content: center;
 
-  min-height: 100dvh;
-  min-width: 100dvw;
   margin: 0;
 
   background-color: var(--background-gray-dark);
+}
+header {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+
+  padding-block: 1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 70dvh;
+  width: 100%;
 }
 </style>

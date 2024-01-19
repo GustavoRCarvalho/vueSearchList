@@ -1,5 +1,11 @@
 {
   "message": "hello i18n !!",
   "searchText": "Search...",
-  "searchButton": "Search"
+  "searchButton": "Search",
+  "TypeFile": "Type of File",
+  "Book": "Book",
+  "Popular": "Popular",
+  "BooksAdded": "books just added",
+  "BookAdded": "book just added",
+  "Pages": "Pages"
 }

@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="buttonFilter">
-      <span class="dropdownTitle">Type of File</span>
-      <span class="dropdownSelect">Book -</span>
+      <span class="dropdownTitle">{{ $t("TypeFile") }}</span>
+      <span class="dropdownSelect">{{ $t("Book") }} -</span>
     </div>
     <div class="verticalLine"></div>
     <input class="inputSearch" :placeholder="$t('searchText')" type="text" />

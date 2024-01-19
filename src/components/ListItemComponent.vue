@@ -4,7 +4,8 @@
     <div class="infoContainer">
       <span class="title"> {{ title }} </span>
       <span class="infos"
-        >{{ author }} * {{ category }} * {{ year }} * {{ pages }} Pages</span
+        >{{ author }} * {{ category }} * {{ year }} * {{ pages }}
+        {{ $t("Pages") }}</span
       >
     </div>
   </li>

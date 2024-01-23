@@ -2,7 +2,9 @@
   <div class="container">
     <div class="buttonFilter">
       <span class="dropdownTitle">{{ $t("TypeFile") }}</span>
-      <span class="dropdownSelect">{{ $t("Book") }} -</span>
+      <span class="dropdownSelect"
+        >{{ $t("Book") }} <ChevronDownIcon class="arrowDown" />
+      </span>
     </div>
     <div class="verticalLine"></div>
     <input class="inputSearch" :placeholder="$t('searchText')" type="text" />
@@ -10,7 +12,9 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+import { ChevronDownIcon } from "@heroicons/vue/24/outline"
+</script>
 
 <style>
 .container {
@@ -69,5 +73,12 @@
 }
 .dropdownSelect {
   color: var(--color-title-item);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrowDown {
+  width: 1em;
 }
 </style>

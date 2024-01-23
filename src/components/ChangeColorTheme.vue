@@ -1,10 +1,13 @@
 <template>
   <button type="button" v-on:click="changeTheme">
-    {{ themeLabel(themeDark) }}
+    <MoonIcon class="icon" />{{ themeLabel(themeDark) }}
+    <SunIcon class="icon" />
   </button>
 </template>
 
 <script setup>
+import { MoonIcon } from "@heroicons/vue/24/outline"
+import { SunIcon } from "@heroicons/vue/24/solid"
 import { ref } from "vue"
 
 const bodyElement = document.body
@@ -26,3 +29,21 @@ function changeTheme() {
   }
 }
 </script>
+
+<style scoped>
+button {
+  background-color: var(--background-button-theme);
+  color: var(--color-button-theme);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  border: none;
+}
+.icon {
+  width: 2em;
+  color: var(--color-button-theme);
+}
+</style>

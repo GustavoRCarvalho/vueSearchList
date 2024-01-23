@@ -41,6 +41,8 @@ bodyElement.classList.add("light-theme")
   --background-item-hover: #dadada;
   --background-image-item: #cacaca;
   --background-button-search: #f1b094;
+  --background-button-theme: #363636;
+  --color-button-theme: #ececec;
   --color-title-item: #1b1b1b;
   --color-button-search: #572003;
   --color-item-description: #c0c0bc;
@@ -53,6 +55,8 @@ bodyElement.classList.add("light-theme")
   --background-item-hover: #252525;
   --background-image-item: #363636;
   --background-button-search: #301f18;
+  --background-button-theme: #ececec;
+  --color-button-theme: #131313;
   --color-title-item: #e4e4e4;
   --color-button-search: #dd5107;
   --color-item-description: #3f3f43;

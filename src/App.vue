@@ -1,5 +1,6 @@
 <template>
   <header>
+    <ChangeColorTheme />
     <ChangeLanguage />
   </header>
   <main>
@@ -8,10 +9,14 @@
 </template>
 
 <script setup>
+import ChangeColorTheme from "./components/ChangeColorTheme.vue"
 import ChangeLanguage from "./components/ChangeLanguage.vue"
 import SearchPage from "./components/SearchPage.vue"
 
 document.title = "Vue Search App"
+
+const bodyElement = document.body
+bodyElement.classList.add("light-theme")
 </script>
 
 <style>
@@ -29,24 +34,38 @@ document.title = "Vue Search App"
 
   width: 100%;
 }
-body {
-  --background-gray-dark: #131313;
-  --background-gray-medium: #1a1a1a;
-  --background-gray-medium-light: #252525;
-  --background-gray-light: #363636;
-  --background-red-dark: #301f18;
+.light-theme {
   --background-white-light: #fff;
-  --color-white-medium: #e4e4e4;
-  --color-red-medium: #dd5107;
-  --color-gray-medium: #3f3f43;
-  --color-gray-light: #797979;
+  --background-app: #ececec;
+  --background-card: #e6e6e6;
+  --background-item-hover: #dadada;
+  --background-image-item: #cacaca;
+  --background-button-search: #f1b094;
+  --color-title-item: #1b1b1b;
+  --color-button-search: #572003;
+  --color-item-description: #c0c0bc;
+  --color-list-title: #3a3a3a;
+}
+.dark-theme {
+  --background-white-light: #fff;
+  --background-app: #131313;
+  --background-card: #1a1a1a;
+  --background-item-hover: #252525;
+  --background-image-item: #363636;
+  --background-button-search: #301f18;
+  --color-title-item: #e4e4e4;
+  --color-button-search: #dd5107;
+  --color-item-description: #3f3f43;
+  --color-list-title: #797979;
+}
+body {
   display: flex;
   align-items: center;
   justify-content: center;
 
   margin: 0;
 
-  background-color: var(--background-gray-dark);
+  background-color: var(--background-app);
 }
 header {
   position: sticky;

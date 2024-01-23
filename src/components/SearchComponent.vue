@@ -14,7 +14,7 @@
 
 <style>
 .container {
-  background-color: var(--background-gray-medium);
+  background-color: var(--background-card);
 
   display: flex;
   align-items: center;
@@ -29,13 +29,13 @@
   outline: none;
   padding: 0;
   background-color: transparent;
-  color: var(--color-white-medium);
+  color: var(--color-title-item);
 
   width: 100%;
 }
 .buttonSearch {
-  background-color: var(--background-red-dark);
-  color: var(--color-red-medium);
+  background-color: var(--background-button-search);
+  color: var(--color-button-search);
 
   font-family: Inter, Helvetica, Arial, sans-serif;
 
@@ -51,7 +51,7 @@
 .verticalLine {
   width: 1px;
   height: 2em;
-  background-color: var(--color-gray-medium);
+  background-color: var(--color-item-description);
   margin-inline: 1em;
 }
 .buttonFilter {
@@ -65,9 +65,9 @@
   cursor: pointer;
 }
 .dropdownTitle {
-  color: var(--color-gray-light);
+  color: var(--color-list-title);
 }
 .dropdownSelect {
-  color: var(--color-white-medium);
+  color: var(--color-title-item);
 }
 </style>

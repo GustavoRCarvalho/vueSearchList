@@ -20,7 +20,7 @@ export default { components: { NotificationList } }
   margin: 0;
 }
 .listComponentContainer {
-  background-color: var(--background-gray-medium);
+  background-color: var(--background-card);
   position: relative;
 
   padding: 1em;
@@ -29,7 +29,7 @@ export default { components: { NotificationList } }
   border-radius: 0.5em;
 }
 .listTitle {
-  color: var(--color-gray-light);
+  color: var(--color-list-title);
 
   padding: 0;
   margin: 0;

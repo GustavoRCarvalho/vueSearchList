@@ -27,7 +27,7 @@ export default {
 <style>
 .containerItem {
   background-color: transparent;
-  color: var(--color-white-medium);
+  color: var(--color-title-item);
 
   display: flex;
   align-items: center;
@@ -43,10 +43,10 @@ export default {
   user-select: none;
 }
 .containerItem:hover {
-  background-color: var(--background-gray-medium-light);
+  background-color: var(--background-item-hover);
 }
 .imgList {
-  background-color: var(--background-gray-light);
+  background-color: var(--background-image-item);
 
   height: calc(100% - 1em);
   aspect-ratio: 3 / 4;
@@ -70,7 +70,7 @@ export default {
   font-weight: bold;
 }
 .infos {
-  color: var(--color-gray-medium);
+  color: var(--color-item-description);
   font-size: small;
 }
 </style>

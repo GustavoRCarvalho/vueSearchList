@@ -25,7 +25,7 @@ function setLocale(e) {
   border: none;
   outline: none;
   font-family: Inter, Helvetica, Arial, sans-serif;
-  color: var(--color-white-medium);
-  background-color: var(--background-gray-medium);
+  color: var(--color-title-item);
+  background-color: var(--background-card);
 }
 </style>

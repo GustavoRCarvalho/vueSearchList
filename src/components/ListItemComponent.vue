@@ -1,28 +1,26 @@
 <template>
   <li class="containerItem">
-    <img :src="src" alt="frontImage" class="imgList" />
+    <img :src="props.src" alt="frontImage" class="imgList" />
     <div class="infoContainer">
-      <span class="title"> {{ title }} </span>
+      <span class="title"> {{ props.title }} </span>
       <span class="infos"
-        >{{ author }} * {{ category }} * {{ year }} * {{ pages }}
-        {{ $t("Pages") }}</span
+        >{{ props.author }} * {{ props.category }} * {{ props.year }} *
+        {{ props.pages }} {{ $t("Pages") }}</span
       >
     </div>
   </li>
 </template>
 
-<script>
-export default {
-  name: "ListItemComponent",
-  props: {
-    src: String,
-    title: String,
-    author: String,
-    category: String,
-    year: Number,
-    pages: Number,
-  },
-}
+<script setup>
+import { defineProps } from "vue"
+const props = defineProps({
+  src: String,
+  title: String,
+  author: String,
+  category: String,
+  year: Number,
+  pages: Number,
+})
 </script>
 <style>
 .containerItem {

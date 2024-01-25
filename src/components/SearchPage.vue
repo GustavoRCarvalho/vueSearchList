@@ -16,7 +16,7 @@
   </LimitContent>
 </template>
 
-<script>
+<script setup>
 import SearchComponent from "./SearchComponent.vue"
 import ListComponent from "./ListComponent.vue"
 import ListItemComponent from "./ListItemComponent.vue"
@@ -66,22 +66,5 @@ const listItems = [
     pages: 444,
   },
 ]
-
-export default {
-  name: "SearchPage",
-  components: {
-    SearchComponent,
-    ListItemComponent,
-    ListComponent,
-    LimitContent,
-  },
-  data() {
-    return {
-      listItems: listItems,
-    }
-  },
-  methods: {
-    showAllList: (number) => number < 4,
-  },
-}
+const showAllList = (number) => number < 4
 </script>

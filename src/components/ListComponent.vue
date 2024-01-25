@@ -8,10 +8,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import NotificationList from "./NotificationList.vue"
-
-export default { components: { NotificationList } }
 </script>
 
 <style>

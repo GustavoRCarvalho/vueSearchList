@@ -7,24 +7,14 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import NotificationImage from "./NotificationImage.vue"
 import perfil1 from "../assets/images/perfilDisney1.jpg"
 import perfil2 from "../assets/images/perfilDisney2.jpg"
-import perfil3 from "../assets/images/perfilDisney3.jpg"
+// import perfil3 from "../assets/images/perfilDisney3.jpg"
+import capaLivro from "../assets/images/capaLivro.webp"
 
-const imagesList = [perfil1, perfil2, perfil3]
-
-export default {
-  components: {
-    NotificationImage,
-  },
-  data() {
-    return {
-      imagesList: imagesList,
-    }
-  },
-}
+const imagesList = [perfil1, perfil2, capaLivro]
 </script>
 
 <style>

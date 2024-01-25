@@ -21,8 +21,8 @@ import SearchComponent from "./SearchComponent.vue"
 import ListComponent from "./ListComponent.vue"
 import ListItemComponent from "./ListItemComponent.vue"
 import LimitContent from "./LimitContent.vue"
-import capaLivro from "../assets/images/capaLivro.webp"
-import capaLivro2 from "../assets/images/capaLivro2.webp"
+import capaLivro from "../assets/images/capaLivro.jpg"
+import capaLivro2 from "../assets/images/capaLivro2.jpg"
 
 const listItems = [
   {

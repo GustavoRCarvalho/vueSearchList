@@ -11,10 +11,9 @@
 import NotificationImage from "./NotificationImage.vue"
 import perfil1 from "../assets/images/perfilDisney1.jpg"
 import perfil2 from "../assets/images/perfilDisney2.jpg"
-// import perfil3 from "../assets/images/perfilDisney3.jpg"
-import capaLivro from "../assets/images/capaLivro.webp"
+import perfil3 from "../assets/images/perfilDisney3.jpg"
 
-const imagesList = [perfil1, perfil2, capaLivro]
+const imagesList = [perfil1, perfil2, perfil3]
 </script>
 
 <style>
